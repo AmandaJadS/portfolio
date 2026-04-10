@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mandy Mountain — Webbdesign</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- =====================
+           SITE HEADER
+           ===================== -->
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a href="#hero" class="site-header__branding">
+            <img
+              src="assets/images/logo.svg"
+              alt="Mandy Mountain"
+              class="site-header__logo"
+            />
+          </a>
+
+          <nav class="main-nav" aria-label="Huvudmeny">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--current">
+                <a href="#hero" class="main-nav__link">Hem</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#tjanster" class="main-nav__link">Tjänster</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#om-mig" class="main-nav__link">Om mig</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#projekt" class="main-nav__link">Projekt</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#kontakt" class="main-nav__link">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="site-header__buttons">
+            <a href="#kontakt" class="button button--rose">
+              Kontakt
+              <svg
+                class="btn-icon"
+                width="14"
+                height="11"
+                viewBox="0 0 14 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="13"
+                  height="10"
+                  rx="1.5"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                />
+                <path
+                  d="M1 1L7 6.5L13 1"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+            <button
+              class="menu-button"
+              aria-label="Öppna meny"
+              aria-expanded="false"
+            >
+              <svg width="18" height="12" viewBox="0 0 18 12" fill="none">
+                <path
+                  d="M0 12V10H18V12H0ZM0 7V5H18V7H0ZM0 2V0H18V2H0Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobil-meny -->
+        <nav class="mobile-menu" id="mobile-menu" aria-hidden="true">
+          <ul class="mobile-menu__list">
+            <li><a href="#hero" class="mobile-menu__link">Hem</a></li>
+            <li><a href="#tjanster" class="mobile-menu__link">Tjänster</a></li>
+            <li><a href="#om-mig" class="mobile-menu__link">Om mig</a></li>
+            <li><a href="#projekt" class="mobile-menu__link">Projekt</a></li>
+            <li><a href="#kontakt" class="mobile-menu__link">Kontakt</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- =====================
+           HERO
+           ===================== -->
+      <section class="hero" id="hero">
+        <p class="hero__eyebrow">Webbdesign &amp; Varumärke</p>
+
+        <h1 class="hero__title">
+          Hemsidor byggda<br />för dem som<br /><em>bryr sig.</em>
+        </h1>
+
+        <p class="hero__body">
+          Jag designar hemsidor för psykologer, coacher och kreativa med något
+          viktigt att säga — noggrant och med känsla i varje detalj.
+        </p>
+
+        <div class="hero__buttons">
+          <a href="#projekt" class="button button--dark">Se mina arbeten →</a>
+          <a href="#kontakt" class="button button--ghost">Kontakta mig</a>
+        </div>
+      </section>
+
+      <!-- Strip / löpande text -->
+      <div class="strip" aria-hidden="true">
+        <div class="strip__inner">
+          <span class="strip__item">Webbdesign ♥</span>
+          <span class="strip__item">Varumärke ♥</span>
+          <span class="strip__item">WordPress ♥</span>
+          <span class="strip__item">Figma ♥</span>
+          <span class="strip__item">HTML &amp; CSS ♥</span>
+          <span class="strip__item">Skönhet som specialintresse ♥</span>
+          <span class="strip__item">Webbdesign ♥</span>
+          <span class="strip__item">Varumärke ♥</span>
+          <span class="strip__item">WordPress ♥</span>
+          <span class="strip__item">Figma ♥</span>
+          <span class="strip__item">HTML &amp; CSS ♥</span>
+          <span class="strip__item">Skönhet som specialintresse ♥</span>
+        </div>
+      </div>
+
+      <!-- =====================
+           TJÄNSTER
+           ===================== -->
+      <section class="services" id="tjanster">
+        <div class="services__header">
+          <p class="services__eyebrow">002 — Vad jag erbjuder</p>
+          <h2 class="services__title">Tjänster</h2>
+        </div>
+
+        <div class="services__grid">
+          <!-- Webbdesign -->
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg
+                width="36"
+                height="32"
+                viewBox="0 0 36 32"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="36"
+                  height="22"
+                  fill="#F69CC0"
+                  opacity="0.15"
+                />
+                <rect
+                  x="2"
+                  y="2"
+                  width="32"
+                  height="18"
+                  fill="#F69CC0"
+                  opacity="0.18"
+                />
+                <rect
+                  x="4"
+                  y="5"
+                  width="6"
+                  height="6"
+                  fill="#F69CC0"
+                  opacity="0.5"
+                />
+                <rect
+                  x="12"
+                  y="5"
+                  width="16"
+                  height="2"
+                  fill="#F69CC0"
+                  opacity="0.35"
+                />
+                <rect
+                  x="12"
+                  y="9"
+                  width="10"
+                  height="2"
+                  fill="#F69CC0"
+                  opacity="0.25"
+                />
+                <rect
+                  x="14"
+                  y="22"
+                  width="8"
+                  height="4"
+                  fill="#F69CC0"
+                  opacity="0.25"
+                />
+                <rect
+                  x="10"
+                  y="26"
+                  width="16"
+                  height="4"
+                  fill="#F69CC0"
+                  opacity="0.3"
+                />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Webbdesign</h3>
+            <p class="service-card__desc">
+              Skräddarsydd design i Figma och bygge i WordPress. Från skiss till
+              live — med SEO, hastighet och känsla i varje detalj.
+            </p>
+            <ul class="service-card__list">
+              <li>Figma-prototyp &amp; design</li>
+              <li>WordPress</li>
+              <li>HTML, CSS &amp; JavaScript</li>
+              <li>Responsivt &amp; tillgängligt</li>
+            </ul>
+          </div>
+
+          <!-- Varumärke -->
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="12"
+                  height="12"
+                  fill="#A0C9EB"
+                  opacity="0.55"
+                />
+                <rect
+                  x="18"
+                  y="2"
+                  width="12"
+                  height="12"
+                  fill="#F69CC0"
+                  opacity="0.55"
+                />
+                <rect
+                  x="2"
+                  y="18"
+                  width="12"
+                  height="12"
+                  fill="#F69CC0"
+                  opacity="0.3"
+                />
+                <rect
+                  x="18"
+                  y="18"
+                  width="12"
+                  height="12"
+                  fill="#A0C9EB"
+                  opacity="0.3"
+                />
+                <rect
+                  x="12"
+                  y="12"
+                  width="8"
+                  height="8"
+                  fill="#2D2B29"
+                  opacity="0.1"
+                />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Varumärke</h3>
+            <p class="service-card__desc">
+              Din visuella identitet från grunden. Logotyp, färgpalett,
+              typografi och grafisk profil — så att du känns igen överallt.
+            </p>
+            <ul class="service-card__list">
+              <li>Logotypdesign</li>
+              <li>Färg- &amp; typografisystem</li>
+              <li>Grafisk profilmanual</li>
+            </ul>
+          </div>
+
+          <!-- Underhåll -->
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg
+                width="28"
+                height="32"
+                viewBox="0 0 28 32"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect
+                  x="10"
+                  y="0"
+                  width="8"
+                  height="8"
+                  fill="#A0C9EB"
+                  opacity="0.6"
+                />
+                <rect
+                  x="6"
+                  y="8"
+                  width="16"
+                  height="4"
+                  fill="#A0C9EB"
+                  opacity="0.5"
+                />
+                <rect
+                  x="2"
+                  y="12"
+                  width="24"
+                  height="4"
+                  fill="#A0C9EB"
+                  opacity="0.4"
+                />
+                <rect
+                  x="6"
+                  y="16"
+                  width="16"
+                  height="4"
+                  fill="#A0C9EB"
+                  opacity="0.5"
+                />
+                <rect
+                  x="10"
+                  y="20"
+                  width="8"
+                  height="4"
+                  fill="#A0C9EB"
+                  opacity="0.6"
+                />
+                <rect
+                  x="12"
+                  y="24"
+                  width="4"
+                  height="8"
+                  fill="#A0C9EB"
+                  opacity="0.45"
+                />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Underhåll &amp; support</h3>
+            <p class="service-card__desc">
+              Din hemsida ska hålla. Jag erbjuder löpande uppdateringar, teknisk
+              support och SEO-optimering så att du kan fokusera på det du är bra
+              på.
+            </p>
+            <ul class="service-card__list">
+              <li>WordPress-uppdateringar</li>
+              <li>SEO &amp; prestanda</li>
+              <li>Löpande support</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================
+           OM MIG
+           ===================== -->
+      <section class="about" id="om-mig">
+        <div class="about__header">
+          <p class="about__eyebrow">003 — Om mig</p>
+          <h2 class="about__title">Byggd på nyfikenhet &amp; <em>nerv.</em></h2>
+        </div>
+
+        <div class="about__content">
+          <figure class="about__image">
+            <img
+              src="assets/images/amanda.jpeg"
+              alt="Amanda Bergh — Mandy Mountain"
+            />
+          </figure>
+
+          <div class="about__text">
+            <p class="about__body">
+              Jag heter Amanda, men vissa kallar mig Mandy Mountain, en lekfull
+              twist av mitt flicknamn Bergh. Jag kanske inte klättrar i fysiska
+              berg, men jag är här för att hjälpa dig klättra i kreativa.
+            </p>
+            <p class="about__body">
+              Jag designar hemsidor för psykologer, coacher och kreativa som har
+              något viktigt att säga. Med bakgrund i både humaniora och teknik
+              tar jag med mig något ovanligt till varje projekt; ett öga för det
+              vackra och en förståelse för det mänskliga. Jag gör det noggrant
+              och jag gör det med känsla.
+            </p>
+            <p class="about__body">
+              Din hemsida är ditt digitala vardagsrum. Den ska kännas som du,
+              inte som en mall någon valde åt dig. Det är det jag bygger.
+            </p>
+            <a
+              href="#kontakt"
+              class="button button--dark"
+              style="margin-top: var(--space-m)"
+            >
+              Kontakta mig →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================
+           PROJEKT
+           ===================== -->
+      <section class="projects" id="projekt">
+        <div class="projects__header">
+          <p class="projects__eyebrow">004 — Utvalda arbeten</p>
+          <h2 class="projects__title">Projekt</h2>
+        </div>
+
+        <div class="projects__grid">
+          <!-- Projekt 5: Djerf Psykologi  -->
+          <article class="project-card">
+            <figure class="project-card__image">
+              <img
+                src="assets/images/projekt-djerf.png"
+                alt="Skärmdump av Djerf Psykologis hemsida"
+                width="720"
+                height="450"
+              />
+            </figure>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>Psykologi</span><span>·</span><span>2026</span>
+              </div>
+              <h3 class="project-card__title">Djerf Psykologi</h3>
+              <p class="project-card__desc">
+                Komplett webbprojekt för psykologpraktik — varumärke, design och
+                WordPress-bygge med Kadence och skräddarsydd CSS. Lugnt,
+                professionellt och varmt.
+              </p>
+              <div class="project-card__footer">
+                <div class="project-card__tags">
+                  <span class="tag tag--rose">WordPress</span>
+                  <span class="tag">Kadence</span>
+                  <span class="tag">Custom CSS</span>
+                </div>
+                <a
+                  href="/projekt/djerf-psykologi/"
+                  class="project-card__arrow"
+                  aria-label="Läs mer om Djerf Psykologi"
+                  >→</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Projekt 1: Krispsykologen -->
+          <article class="project-card">
+            <figure class="project-card__image">
+              <img
+                src="assets/images/projekt-krispsykologen.png"
+                alt="Skärmdump av Krispsykologens hemsida"
+                width="720"
+                height="450"
+              />
+            </figure>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>Psykolog</span><span>·</span><span>2026</span>
+              </div>
+              <h3 class="project-card__title">Krispsykologen</h3>
+              <p class="project-card__desc">
+                Varumärke, design och WordPress-bygge för Krispsykologen Från
+                Local by Flywheel till live på one.com.
+              </p>
+              <div class="project-card__footer">
+                <div class="project-card__tags">
+                  <span class="tag tag--rose">WordPress</span>
+                  <span class="tag">Kadence</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">Yoast SEO</span>
+                </div>
+                <a
+                  href="/projekt/krispsykologen/"
+                  class="project-card__arrow"
+                  aria-label="Läs mer om Krispsykologen"
+                  >→</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Projekt 2: MovieGeeks -->
+          <article class="project-card">
+            <figure class="project-card__image">
+              <img
+                src="assets/images/projekt-moviegeeks.jpg"
+                alt="Skärmdump av MovieGeeks webbdesign"
+                width="720"
+                height="450"
+              />
+            </figure>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>E-handel</span><span>·</span><span>2025</span>
+              </div>
+              <h3 class="project-card__title">MovieGeeks</h3>
+              <p class="project-card__desc">
+                Varumärkesidentitet och HTML-prototyp för svensk e-handel med
+                fysiska filmer.
+              </p>
+              <div class="project-card__footer">
+                <div class="project-card__tags">
+                  <span class="tag tag--blue">Figma</span>
+                  <span class="tag">HTML</span>
+                  <span class="tag">Branding</span>
+                </div>
+                <a
+                  href="/projekt/moviegeeks/"
+                  class="project-card__arrow"
+                  aria-label="Läs mer om MovieGeeks"
+                  >→</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Projekt 3: Västkust psykologi -->
+          <article class="project-card">
+            <figure class="project-card__image">
+              <img
+                src="assets/images/projekt-vastkust.png"
+                alt="Skärmdump av Västkust psykologis hemsida"
+                width="720"
+                height="450"
+              />
+            </figure>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>Psykologi</span><span>·</span><span>2021–nu</span>
+              </div>
+              <h3 class="project-card__title">Västkust psykologi</h3>
+              <p class="project-card__desc">
+                Digital närvaro och PWA för guidat audioinnehåll. Byggt nära
+                verksamheten.
+              </p>
+              <div class="project-card__footer">
+                <div class="project-card__tags">
+                  <span class="tag tag--rose">WordPress</span>
+                  <span class="tag">PWA</span>
+                  <span class="tag">Elementor Pro</span>
+                </div>
+                <a
+                  href="/projekt/vastkust-psykologi/"
+                  class="project-card__arrow"
+                  aria-label="Läs mer om Västkust Psykologi"
+                  >→</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Projekt 4: Psykologtipset -->
+          <article class="project-card">
+            <figure class="project-card__image">
+              <img
+                src="assets/images/projekt-psykologtipset.webp"
+                alt="Skärmdump av Psykologtipsets hemsida"
+                width="720"
+                height="450"
+              />
+            </figure>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>Psykolog</span><span>·</span><span>2024</span>
+              </div>
+              <h3 class="project-card__title">Psykologtipset</h3>
+              <p class="project-card__desc">
+                Hemsida för psykologtjänster byggd i WordPress med
+                Kadence-temat. Fokus på tydlig struktur och förtroendeingivande
+                design.
+              </p>
+              <div class="project-card__footer">
+                <div class="project-card__tags">
+                  <span class="tag tag--rose">WordPress</span>
+                  <span class="tag">Kadence</span>
+                </div>
+                <a
+                  href="/projekt/psykologtipset/"
+                  class="project-card__arrow"
+                  aria-label="Läs mer om Psykologtipset"
+                  >→</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =====================
+           KONTAKT
+           ===================== -->
+      <section class="contact-section" id="kontakt">
+        <div class="contact-section__inner">
+          <p class="contact-section__eyebrow">005 — Kontakt</p>
+          <h2 class="contact-section__title">Låt oss <em>prata.</em></h2>
+          <p class="contact-section__body">
+            Har du ett projekt på gång, en idé du vill bolla, eller bara vill
+            säga hej? Skriv till mig.
+          </p>
+          <div class="contact-section__actions">
+            <a href="mailto:hej@mandymountain.se" class="button button--dark">
+              hej@mandymountain.se →
+            </a>
+            <p class="contact-section__note">Svarar inom 1–2 dagar ♥</p>
+          </div>
+        </div>
+
+        <!-- Pixel mountain deco -->
+        <div class="contact-section__deco" aria-hidden="true">
+          <svg
+            viewBox="0 0 100 60"
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="60"
+          >
+            <rect
+              x="42"
+              y="0"
+              width="16"
+              height="10"
+              fill="currentColor"
+              opacity="0.25"
+            />
+            <rect
+              x="34"
+              y="10"
+              width="32"
+              height="10"
+              fill="currentColor"
+              opacity="0.2"
+            />
+            <rect
+              x="26"
+              y="20"
+              width="48"
+              height="10"
+              fill="currentColor"
+              opacity="0.16"
+            />
+            <rect
+              x="18"
+              y="30"
+              width="64"
+              height="10"
+              fill="currentColor"
+              opacity="0.12"
+            />
+            <rect
+              x="10"
+              y="40"
+              width="80"
+              height="10"
+              fill="currentColor"
+              opacity="0.08"
+            />
+            <rect
+              x="0"
+              y="50"
+              width="100"
+              height="10"
+              fill="currentColor"
+              opacity="0.05"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <!-- =====================
+           FOOTER
+           ===================== -->
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <div class="site-footer__branding">
+            <img
+              src="assets/images/logo.svg"
+              alt="Mandy Mountain"
+              class="site-footer__logo"
+              width="130"
+              height="26"
+            />
+            <p class="site-footer__tagline">
+              Webbdesign för psykologer, coacher och kreativa.
+            </p>
+          </div>
+
+          <nav aria-label="Sidfotsmeny">
+            <h3 class="site-footer__nav-title">Länkar</h3>
+            <ul class="site-footer__nav-list">
+              <li><a href="#hero" class="site-footer__nav-link">Hem</a></li>
+              <li>
+                <a href="#tjanster" class="site-footer__nav-link">Tjänster</a>
+              </li>
+              <li>
+                <a href="#om-mig" class="site-footer__nav-link">Om mig</a>
+              </li>
+              <li>
+                <a href="#projekt" class="site-footer__nav-link">Projekt</a>
+              </li>
+              <li>
+                <a href="#kontakt" class="site-footer__nav-link">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="site-footer__contact">
+            <h3 class="site-footer__nav-title">Kontakt</h3>
+            <a href="mailto:hej@mandymountain.se" class="site-footer__email">
+              hej@mandymountain.se
+            </a>
+            <p class="site-footer__location">Båstad, Skåne</p>
+          </div>
+        </div>
+
+        <div class="site-footer__copyright">
+          <span>© 2026 Mandy Mountain</span>
+          <span aria-hidden="true">
+            <!-- Pixel heart: 7×6 grid, 2px cells, viewBox 14×12 -->
+            <svg
+              width="12"
+              height="10"
+              viewBox="0 0 14 12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="2" y="0" width="4" height="2" fill="#F69CC0" />
+              <rect x="8" y="0" width="4" height="2" fill="#F69CC0" />
+              <rect x="0" y="2" width="14" height="2" fill="#F69CC0" />
+              <rect x="0" y="4" width="14" height="2" fill="#F69CC0" />
+              <rect x="2" y="6" width="10" height="2" fill="#F69CC0" />
+              <rect x="4" y="8" width="6" height="2" fill="#F69CC0" />
+              <rect x="6" y="10" width="2" height="2" fill="#F69CC0" />
+            </svg>
+          </span>
+          <span>Båstad</span>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const menuButton = document.querySelector(".menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuButton.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("mobile-menu--open");
+        menuButton.setAttribute("aria-expanded", isOpen);
+        mobileMenu.setAttribute("aria-hidden", !isOpen);
+      });
+
+      document.querySelectorAll(".mobile-menu__link").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("mobile-menu--open");
+          menuButton.setAttribute("aria-expanded", false);
+          mobileMenu.setAttribute("aria-hidden", true);
+        });
+      });
+    </script>
+  </body>
+</html>
